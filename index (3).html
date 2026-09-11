@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>رسالة ترحيبية</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #1e3c72, #2a5298, #6dd5ed);
+      font-family: Tahoma, sans-serif;
+    }
+
+    .message {
+      color: #ffffff;
+      font-size: clamp(2rem, 8vw, 6rem);
+      font-weight: bold;
+      text-align: center;
+      padding: 20px;
+      text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      animation: slideUp 2.5s ease-out forwards;
+    }
+
+    @keyframes slideUp {
+      0% {
+        transform: translateY(100vh);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1 class="message">شوف حد ينيكک </h1>
+</body>
+</html>
